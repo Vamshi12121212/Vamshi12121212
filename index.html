@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Vamshi</title>
+      <!-- ALL RIGTS RESERVED 2024 -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+      <script src="index.js"></script>
+      <link href="index.css" rel="stylesheet"/>
+   </head>
+   <body>
+      <div class="main-container">
+         <!-- <h1 class="text-center heading">SELECT TASK</h1> -->
+         <div class="flag-text">
+            <span class="saffron">SELECT</span>
+            <span class="white">TASK</span>
+            <span class="green">BELOW</span> <!-- Optional symbol in green to represent harmony -->
+        </div>
+         <div class="accordion" id="accordionExample">
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  FE
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+
+                  <!-- From Here -->
+                  <div class="accordion" id="accordionExample2">
+
+                     <div class="accordion-item">
+                       <h2 class="accordion-header">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneDEM" aria-expanded="false" aria-controls="collapseOneDEM">
+                           DEM
+                         </button>
+                       </h2>
+                       <div id="collapseOneDEM" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                         <div class="accordion-body">
+
+                           <!-- From Here DEM Values -->
+                           <div class="accordion" id="accordionExample3">
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneCUTTINGCH" aria-expanded="true" aria-controls="collapseOneCUTTINGCH">
+                                   CUTTING CH
+                                  </button>
+                                </h2>
+                                <div id="collapseOneCUTTINGCH" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                  <div class="accordion-body">
+                                    <!-- From Here CUTTING CH Values -->
+                                    <div class="accordion" id="accordionExample4">
+
+                                       <div class="accordion-item">
+                                         <h2 class="accordion-header">
+                                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneSTEELTGT" aria-expanded="true" aria-controls="collapseOneSTEELTG">
+                                             STEEL TGT
+                                           </button>
+                                         </h2>
+                                         <div id="collapseOneSTEELTGT" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
+                                           <div class="accordion-body">
+                                             <!-- From here STL TGT Values -->
+                                             <div class="accordion" id="accordionExample5">
+
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneREDSCROSSTGT" aria-expanded="true" aria-controls="collapseOneREDSCROSSTGT">
+                                                      RD CROSS TGT
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseOneREDSCROSSTGT" class="accordion-collapse collapse" data-bs-parent="#accordionExample5">
+                                                    <div class="accordion-body">
+                                                      <div class="calculator-container">
+                                                         Circumference of TNT(cm)<input type="number" class="red-cross-tgt-input form-control" id="redCrossTgtInput" onchange="changeInput()"/> 
+                                                         <p class="x-mark"></p>
+                                                         <p class="default-value"></p>
+                                                      </div>
+                                                      <p class="m-0 p-0 mt-2"><strong>Reqd Qty of CE TNT (grams) = </strong> <span class="answer-span" id="inputValueAfterCalculated">Fill The Input</span></p>
+                                                      <div class="">
+                                                         <p class="m-0 p-0 mb-2 mt-2">
+                                                            
+                                                         </p>
+                                                         <p class="m-0 p-0 mb-2 mt-2">
+                                                            
+                                                         </p>
+                                                         <p class="m-0 p-0 mb-2 mt-2">
+                                              
+                                                         </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+
+                                                <div class="accordion-item">
+                                                  <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoRECTANGULARTGT" aria-expanded="false" aria-controls="collapseTwoRECTANGULARTGT">
+                                                      RECTANGULAR TGT
+                                                    </button>
+                                                  </h2>
+                                                  <div id="collapseTwoRECTANGULARTGT" class="accordion-collapse collapse" data-bs-parent="#accordionExample5">
+                                                    <div class="accordion-body">
+                                                      <div class="calculator-container">
+                                                         <p class="default-value"></p>
+                                                         <p class="x-mark"></p>
+                                                         Width of TNT(cm)<input type="number" class="red-cross-tgt-input form-control" id="changeSecondFirstInput"/> 
+                                                         <p class="x-mark"></p>
+                                                         Thickness of TNT(cm)<input type="number" class="red-cross-tgt-input form-control" id="changeSecondSecondInput" /><span class="square"></span>
+                                                         <p class="x-mark"></p>
+                                                         <button class="btn btn-primary" type="button" onclick="CalculateSecond()">Calculate</button>
+                                                      </div>
+                                                      <p class="m-0 p-0 mt-2"><strong>Reqd Qty of CE TNT (grams) = </strong> <span class="answer-span" id="secondOutputAfterCalculated">Fill The Input</span></p>
+                                                      <div class="">
+                                                         <p class="m-0 p-0 mb-2 mt-2">
+                                                            
+                                                         </p>
+                                                         <p class="m-0 p-0 mb-2 mt-2">
+                                                            
+                                                         </p>
+                                                         <p class="m-0 p-0 mb-2 mt-2">
+                                                            
+                                                         </p>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                                
+                                              </div>
+                                             <!-- To Above STL TGT Values -->
+                                           </div>
+                                         </div>
+                                       </div>
+
+                                       <div class="accordion-item">
+                                        <h2 class="accordion-header">
+                                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTimberTGT" aria-expanded="false" aria-controls="collapseTimberTGT">
+                                            TIMBER TGT
+                                          </button>
+                                        </h2>
+                                        <div id="collapseTimberTGT" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                          <div class="accordion-body">
+                                            <!-- TIMBER TGT Subtopics -->
+                                            <div class="accordion" id="accordionTimberTGTSubtopics">
+                                              
+                                              <!-- Subtopic 1: RECTANGULAR CROSS SEC -->
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRectangularCrossSec" aria-expanded="false" aria-controls="collapseRectangularCrossSec">
+                                                    RECTANGULAR CROSS SECT
+                                                  </button>
+                                                </h2>
+                                                <div id="collapseRectangularCrossSec" class="accordion-collapse collapse" data-bs-parent="#accordionTimberTGTSubtopics">
+                                                  <div class="accordion-body">
+                                                    <!-- Button to open calculator for RECTANGULAR CROSS SEC -->
+                                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calculatorModalRectangular">
+                                                      OPEN CALCULATOR FOR RECTANGULAR CROSS SEC
+                                                    </button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                     
+                                              <!-- Subtopic 2: CIRCULAR CROSS SEC -->
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCircularCrossSec" aria-expanded="false" aria-controls="collapseCircularCrossSec">
+                                                    CIRCULAR CROSS SEC
+                                                  </button>
+                                                </h2>
+                                                <div id="collapseCircularCrossSec" class="accordion-collapse collapse" data-bs-parent="#accordionTimberTGTSubtopics">
+                                                  <div class="accordion-body">
+                                                    <!-- Button to open calculator for Circular Cross Section -->
+                                                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calculatorModalCircular">
+                                                      OPEN CALCULATOR FOR CIRCULAR CROSS SEC
+                                                    </button>
+                                                  </div>
+                                                </div>
+                                              </div>
+                                     
+                                            </div>
+                                            <!-- End of TIMBER TGT Subtopics -->
+                                          </div>
+                                        </div>
+                                     </div>
+                                     
+                                     <!-- Modal for RECTANGULAR CROSS SECTION Calculator -->
+                                     <div class="modal fade" id="calculatorModalRectangular" tabindex="-1" aria-labelledby="calculatorModalRectangularLabel" aria-hidden="true">
+                                       <div class="modal-dialog">
+                                         <div class="modal-content">
+                                           <div class="modal-header">
+                                             <h5 class="modal-title" id="calculatorModalRectangularLabel">RECTANGULAR CROSS SECTION</h5>
+                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                           </div>
+                                           <div class="modal-body">
+                                             <!-- RECTANGULAR CROSS SECTION -->
+                                             <div class="mb-3">
+                                               <label for="width" class="form-label">Width Of TGT (cm):</label>
+                                               <input type="number" class="form-control" id="width" placeholder=>
+                                             </div>
+                                             <div class="mb-3">
+                                               <label for="thickness" class="form-label">Thickness TNT (cm):</label>
+                                               <input type="number" class="form-control" id="thickness" placeholder=>
+                                             </div>
+                                             <div class="mb-3">
+                                               <label for="rectangularResult" class="form-label">Reqd Qty of CE TNT (grams):</label>
+                                               <input type="text" class="form-control" id="rectangularResult" readonly>
+                                             </div>
+                                             <button class="btn btn-success" onclick="calculateRectangular()">Calculate</button>
+                                           </div>
+                                         </div>
+                                       </div>
+                                     </div>
+                                     
+                                     <!-- Modal for Circular Cross Section Calculator -->
+                                     <div class="modal fade" id="calculatorModalCircular" tabindex="-1" aria-labelledby="calculatorModalCircularLabel" aria-hidden="true">
+                                       <div class="modal-dialog">
+                                         <div class="modal-content">
+                                           <div class="modal-header">
+                                             <h5 class="modal-title" id="calculatorModalCircularLabel">Circular Cross Section Calculator</h5>
+                                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                           </div>
+                                           <div class="modal-body">
+                                             <!-- Circular Cross Section Calculator form -->
+                                             <div class="mb-3">
+                                               <label for="diameter" class="form-label">Diamter of TNT (cm):</label>
+                                               <input type="number" class="form-control" id="diameter" placeholder="">
+                                             </div>
+                                             <div class="mb-3">
+                                               <label for="circularResult" class="form-label">Result:</label>
+                                               <input type="text" class="form-control" id="circularResult" readonly>
+                                             </div>
+                                             <button class="btn btn-success" onclick="calculateCircular()">Calculate</button>
+                                           </div>
+                                         </div>
+                                       </div>
+                                     </div>
+                                     
+                                     <script>
+                                       // Calculate Rectangular Cross Section
+                                       function calculateRectangular() {
+                                         var b = parseFloat(document.getElementById("width").value);
+                                         var t = parseFloat(document.getElementById("thickness").value);
+                                         if (!isNaN(b) && !isNaN(t)) {
+                                           var result = (24 * b * t * t) / 500;
+                                           document.getElementById("rectangularResult").value = result.toFixed(2);
+                                         } else {
+                                           alert("Please enter valid numbers for width (b) and thickness (t)!");
+                                         }
+                                       }
+                                     
+                                       // Calculate Circular Cross Section
+                                       function calculateCircular() {
+                                         var d = parseFloat(document.getElementById("diameter").value);
+                                         if (!isNaN(d)) {
+                                           var result = (48 * Math.pow(d, 3)) / 1000;
+                                           document.getElementById("circularResult").value = result.toFixed(2);
+                                         } else {
+                                           alert("Please enter a valid number for diameter (d)!");
+                                         }
+                                       }
+                                     </script>
+
+                                       <div class="accordion-item">
+                                         <h2 class="accordion-header">
+                                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeMASONARYTGT" aria-expanded="false" aria-controls="collapseThreeMASONARYTGT">
+                                             MASONARY TGT
+                                           </button>
+                                         </h2>
+                                         <div id="collapseThreeMASONARYTGT" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
+                                           <div class="accordion-body">
+                                             <strong>Need to add Values</strong> 
+                                           </div>
+                                         </div>
+                                       </div>
+
+                                       <div class="accordion-item">
+                                          <h2 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourRCCTGT" aria-expanded="false" aria-controls="collapseFourRCCTGT">
+                                              RCC TGT
+                                            </button>
+                                          </h2>
+                                          <div id="collapseFourRCCTGT" class="accordion-collapse collapse" data-bs-parent="#accordionExample4">
+                                            <div class="accordion-body">
+                                              <strong>Need to add Values</strong> 
+                                            </div>
+                                          </div>
+                                        </div>
+
+                                     </div>
+                                    <!-- To Above CUTTING CH Values -->
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoFTCH" aria-expanded="false" aria-controls="collapseTwoFTCH">
+                                    FT CH
+                                  </button>
+                                </h2>
+                                <div id="collapseTwoFTCH" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                  <div class="accordion-body">
+                                    <strong>Need to add Values</strong> 
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeBRCH" aria-expanded="false" aria-controls="collapseThreeBRCH">
+                                    BRK CH
+                                  </button>
+                                </h2>
+                                <div id="collapseThreeBRCH" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                  <div class="accordion-body">
+                                    <strong>Need to add Values</strong> 
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="accordion-item">
+                                 <h2 class="accordion-header">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourPRCH" aria-expanded="false" aria-controls="collapseFourPRCH">
+                                     PR CH
+                                   </button>
+                                 </h2>
+                                 <div id="collapseFourPRCH" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                   <div class="accordion-body">
+                                     <strong>Need to add Values</strong> 
+                                   </div>
+                                 </div>
+                               </div>
+
+                               <div class="accordion-item">
+                                 <h2 class="accordion-header">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveBHCH" aria-expanded="false" aria-controls="collapseFiveBHCH">
+                                     BH CH
+                                   </button>
+                                 </h2>
+                                 <div id="collapseFiveBHCH" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                   <div class="accordion-body">
+                                     <strong>Need to add Values</strong> 
+                                   </div>
+                                 </div>
+                               </div>
+
+                               <div class="accordion-item">
+                                 <h2 class="accordion-header">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixMINEDCH" aria-expanded="false" aria-controls="collapseSixMINEDCH">
+                                     MINED CH
+                                   </button>
+                                 </h2>
+                                 <div id="collapseSixMINEDCH" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                   <div class="accordion-body">
+                                     <strong>Need to add Values</strong> 
+                                   </div>
+                                 </div>
+                               </div>
+
+                               <div class="accordion-item">
+                                 <h2 class="accordion-header">
+                                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSevenCONCLUSSIONCH" aria-expanded="false" aria-controls="collapseSevenCONCLUSSIONCH">
+                                     CONCLUSSION CH
+                                   </button>
+                                 </h2>
+                                 <div id="collapseSevenCONCLUSSIONCH" class="accordion-collapse collapse" data-bs-parent="#accordionExample3">
+                                   <div class="accordion-body">
+                                     <strong>Need to add Values</strong> 
+                                   </div>
+                                 </div>
+                               </div>
+
+                            </div>
+                           <!-- Above DEM Values -->
+
+                         </div>
+                       </div>
+                     </div>
+                     
+
+                     <div class="accordion-item">
+                       <h2 class="accordion-header">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoARCABLE" aria-expanded="false" aria-controls="collapseTwoARCABLE">
+                           AR CABLE
+                         </button>
+                       </h2>
+                       <div id="collapseTwoARCABLE" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                         <div class="accordion-body">
+                           <strong>Need to add Values</strong> 
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="accordion-item">
+                       <h2 class="accordion-header">
+                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeTRCONSTR" aria-expanded="false" aria-controls="collapseThreeTRCONSTR">
+                           TR CONSTR
+                         </button>
+                       </h2>
+                       <div id="collapseThreeTRCONSTR" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                         <div class="accordion-body">
+                           <strong>Need to add Values</strong> 
+                         </div>
+                       </div>
+                     </div>
+
+                     <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourHELIPAD" aria-expanded="false" aria-controls="collapseFourHELIPAD">
+                            HELIPAD
+                          </button>
+                        </h2>
+                        <div id="collapseFourHELIPAD" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                          <div class="accordion-body">
+                            <strong>Need to add Values</strong> 
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFiveFWS" aria-expanded="false" aria-controls="collapseFiveFWS">
+                            FWS
+                          </button>
+                        </h2>
+                        <div id="collapseFiveFWS" class="accordion-collapse collapse" data-bs-parent="#accordionExample2">
+                          <div class="accordion-body">
+                            <strong>Need to add Values</strong> 
+                          </div>
+                        </div>
+                      </div>
+
+                   </div>
+
+                  <!-- To Here  -->
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBR" aria-expanded="false" aria-controls="collapseBR">
+                  BR
+                </button>
+              </h2>
+              <div id="collapseBR" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <!-- BR Subtopics -->
+                  <div class="accordion" id="accordionBRSubtopics">
+           
+                    <!-- Subtopic 1 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBRSub" aria-expanded="false" aria-controls="collapseOneBRSub">
+                          BR Subtopic 1
+                        </button>
+                      </h2>
+                      <div id="collapseOneBRSub" class="accordion-collapse collapse" data-bs-parent="#accordionBRSubtopics">
+                        <div class="accordion-body">
+                          <!-- Sub-subtopics for BR Subtopic 1 -->
+                          <div class="accordion" id="accordionBRSubSubtopic1">
+                            <!-- Sub-subtopic 1.1 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneBRSubSub1" aria-expanded="false" aria-controls="collapseOneBRSubSub1">
+                                  BR Sub-subtopic 1.1
+                                </button>
+                              </h2>
+                              <div id="collapseOneBRSubSub1" class="accordion-collapse collapse" data-bs-parent="#accordionBRSubSubtopic1">
+                                <div class="accordion-body">
+                                  <!-- Calculator for BR Sub-subtopic 1.1 -->
+                                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                                    Open Calculator for BR Sub-subtopic 1.1
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+           
+                            <!-- Sub-subtopic 1.2 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoBRSubSub1" aria-expanded="false" aria-controls="collapseTwoBRSubSub1">
+                                  BR Sub-subtopic 1.2
+                                </button>
+                              </h2>
+                              <div id="collapseTwoBRSubSub1" class="accordion-collapse collapse" data-bs-parent="#accordionBRSubSubtopic1">
+                                <div class="accordion-body">
+                                  <!-- Calculator for BR Sub-subtopic 1.2 -->
+                                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                                    Open Calculator for BR Sub-subtopic 1.2
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+           
+                            <!-- Sub-subtopic 1.3 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeBRSubSub1" aria-expanded="false" aria-controls="collapseThreeBRSubSub1">
+                                  BR Sub-subtopic 1.3
+                                </button>
+                              </h2>
+                              <div id="collapseThreeBRSubSub1" class="accordion-collapse collapse" data-bs-parent="#accordionBRSubSubtopic1">
+                                <div class="accordion-body">
+                                  <!-- Calculator for BR Sub-subtopic 1.3 -->
+                                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                                    Open Calculator for BR Sub-subtopic 1.3
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+           
+                            <!-- Sub-subtopic 1.4 -->
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourBRSubSub1" aria-expanded="false" aria-controls="collapseFourBRSubSub1">
+                                  BR Sub-subtopic 1.4
+                                </button>
+                              </h2>
+                              <div id="collapseFourBRSubSub1" class="accordion-collapse collapse" data-bs-parent="#accordionBRSubSubtopic1">
+                                <div class="accordion-body">
+                                  <!-- Calculator for BR Sub-subtopic 1.4 -->
+                                  <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+                                    Open Calculator for BR Sub-subtopic 1.4
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+           
+                    <!-- Subtopic 2 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoBRSub" aria-expanded="false" aria-controls="collapseTwoBRSub">
+                          BR Subtopic 2
+                        </button>
+                      </h2>
+                      <div id="collapseTwoBRSub" class="accordion-collapse collapse" data-bs-parent="#accordionBRSubtopics">
+                        <div class="accordion-body">
+                          <!-- Sub-subtopics for BR Subtopic 2 -->
+                          <div class="accordion" id="accordionBRSubSubtopic2">
+                            <!-- Add sub-subtopics with calculators here -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+           
+                    <!-- Subtopic 3 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeBRSub" aria-expanded="false" aria-controls="collapseThreeBRSub">
+                          BR Subtopic 3
+                        </button>
+                      </h2>
+                      <div id="collapseThreeBRSub" class="accordion-collapse collapse" data-bs-parent="#accordionBRSubtopics">
+                        <div class="accordion-body">
+                          <!-- Sub-subtopics for BR Subtopic 3 -->
+                          <div class="accordion" id="accordionBRSubSubtopic3">
+                            <!-- Add sub-subtopics with calculators here -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+           
+                    <!-- Subtopic 4 -->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourBRSub" aria-expanded="false" aria-controls="collapseFourBRSub">
+                          BR Subtopic 4
+                        </button>
+                      </h2>
+                      <div id="collapseFourBRSub" class="accordion-collapse collapse" data-bs-parent="#accordionBRSubtopics">
+                        <div class="accordion-body">
+                          <!-- Sub-subtopics for BR Subtopic 4 -->
+                          <div class="accordion" id="accordionBRSubSubtopic4">
+                            <!-- Add sub-subtopics with calculators here -->
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+           
+                  </div>
+                  <!-- End of BR Subtopics -->
+                </div>
+              </div>
+           </div>
+           
+           <!-- Modal for Calculator -->
+           <div class="modal fade" id="calculatorModal" tabindex="-1" aria-labelledby="calculatorModalLabel" aria-hidden="true">
+             <div class="modal-dialog">
+               <div class="modal-content">
+                 <div class="modal-header">
+                   <h5 class="modal-title" id="calculatorModalLabel">Calculator</h5>
+                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 </div>
+                 <div class="modal-body">
+                   <!-- Calculator form -->
+                   <div class="mb-3">
+                     <label for="number1" class="form-label">Enter First Number:</label>
+                     <input type="number" class="form-control" id="number1">
+                   </div>
+                   <div class="mb-3">
+                     <label for="number2" class="form-label">Enter Second Number:</label>
+                     <input type="number" class="form-control" id="number2">
+                   </div>
+                   <div class="mb-3">
+                     <label for="result" class="form-label">Result:</label>
+                     <input type="text" class="form-control" id="result" readonly>
+                   </div>
+                   <button class="btn btn-success" onclick="calculate()">Calculate</button>
+                 </div>
+               </div>
+             </div>
+           </div>
+           
+           <script>
+             
+           </script>
+           
+
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  MINE W
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Need to add Values</strong> 
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+               <h2 class="accordion-header">
+                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                   CBRN
+                 </button>
+               </h2>
+               <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                 <div class="accordion-body">
+                   <strong>Need to add Values</false> 
+                 </div>
+               </div>
+             </div>
+
+          </div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="index.js"></script>
+   </body>
+
+</html>
