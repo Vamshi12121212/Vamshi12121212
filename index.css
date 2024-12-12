@@ -1,0 +1,69 @@
+.main-container{
+   min-height: 100vh;
+   margin: 0px;
+   padding: 0px;
+   /* border: 5px solid #4d784e; */
+   display: flex;
+   flex-direction: column;
+  padding: 20px;
+  background-image: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701116241.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.heading{
+   padding: 0px;
+   margin: 0px;
+   font-size: 20px;
+   margin-bottom: 20px;
+   
+}
+.red-cross-tgt-input{
+   width: 60px;
+}
+.calculator-container{
+   display: flex;
+   align-items: center;
+   /* justify-content: center; */
+   gap: 10px;
+}
+.x-mark{
+   padding: 0px;
+   margin: 0px;
+   font-weight: bold;
+}
+.default-value{
+   font-size: 23px;
+   font-weight: 500;
+   padding: 0px;
+   margin: 0px;
+}
+.answer-span{
+   font-size: 20px;
+   font-weight: 500;
+   /* font-family: 'Courier New', Courier, monospace; */
+   font-style: italic;
+   color: red;
+}
+.square{
+   margin-bottom: 20px;
+   font-size: 10px;
+}
+
+.flag-text {
+   font-size: 30px;
+   font-weight: bold;
+   line-height: 1.2;
+   text-align: center;
+   font-family: Arial, sans-serif;
+}
+.flag-text .saffron {
+   color: #FF9933; /* Saffron */
+}
+.flag-text .white {
+   color: #FFFFFF; /* White */
+   text-shadow: 1px 1px 2px #000000; /* Shadow for visibility */
+}
+.flag-text .green {
+   color: #138808; /* Green */
+}
